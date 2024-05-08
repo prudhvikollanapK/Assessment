@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "2a8a4fa8-37ba-434f-bf2f-2f6ba4f5602f",
+		"name": "Data Pusher",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19888139",
+		"_collection_link": "https://warped-moon-54737.postman.co/workspace/New-Team-Workspace~7a2737cf-7ab0-442d-ae17-e2c677110567/collection/19888139-2a8a4fa8-37ba-434f-bf2f-2f6ba4f5602f?action=share&source=collection_link&creator=19888139"
+	},
+	"item": [
+		{
+			"name": "Create Account",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "app_secret_token",
+						"value": "abcdef",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"user@gmail.com\",\n    \"account_id\": \"NX1234\",\n    \"account_name\": \"Demo User\",\n    \"website\": \"https://example.com\",\n    \"app_secret_token\":\"abcdef\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/data/accounts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"data",
+						"accounts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Account",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "app_secret_token",
+						"value": "abcdef",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"user@gmail.com\",\n    \"account_id\": \"NX1234\",\n    \"account_name\": \"Demo User\",\n    \"website\": \"https://user.com\",\n    \"app_secret_token\":\"abcdef\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/data/accounts/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"data",
+						"accounts",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Acount",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "app_secret_token",
+						"value": "abcdef",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"user@gmail.com\",\n    \"account_id\": \"NX1234\",\n    \"account_name\": \"Demo User\",\n    \"website\": \"https://user.com\",\n    \"app_secret_token\":\"abcdef\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/data/accounts/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"data",
+						"accounts",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrive Account",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "app_secret_token",
+						"value": "abcdef",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"user@gmail.com\",\n    \"account_id\": \"NX1234\",\n    \"account_name\": \"Demo User\",\n    \"website\": \"https://example.com\",\n    \"app_secret_token\":\"abcdef\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/data/accounts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"data",
+						"accounts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrive specific Account",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "app_secret_token",
+						"value": "abcdef",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"user@gmail.com\",\n    \"account_id\": \"NX1234\",\n    \"account_name\": \"Demo User\",\n    \"website\": \"https://example.com\",\n    \"app_secret_token\":\"abcdef\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/data/accounts/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"data",
+						"accounts",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
